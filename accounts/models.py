@@ -36,7 +36,7 @@ class Order(models.Model):
         ('Out of delivery', 'Out of delivery'),
         ('Delivered', 'Delivered'),
         )
-    customer = models.ForeignKey(Customer, null=True, on_delete=models.SET_NULL)
-    product = models.ForeignKey(Product, null=True, on_delete=models.SET_NULL)
+    customer = models.ForeignKey(Customer, null=True, on_delete=models.SET_NULL)# on_delete=models.SET_NULL --> When an order is removed the order will remain in the database
+    product = models.ForeignKey(Product, null=True, on_delete=models.SET_NULL)# on_delete=models.SET_NULL --> When an order is removed the order will remain in the database
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     status = models.CharField(max_length=200, null=True, choices=STATUS)
