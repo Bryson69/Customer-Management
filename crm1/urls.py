@@ -21,6 +21,6 @@ from django.urls import path, include
 # pattern that the user has typed into the browser and
 # return them back to a page that the user is looking for
 urlpatterns = [
-    path(r'^admin/', admin.site.urls),
-    path('',include('accounts.urls'))
+    path('admin/', admin.site.urls),
+    path('',include('accounts.urls'))#Specified app name and which url were calling
 ]
