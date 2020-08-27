@@ -6,4 +6,5 @@ from .models import *
 # Registering the table from the class Customer
 admin.site.register(Customer)
 admin.site.register(Product)
+admin.site.register(Tag)
 admin.site.register(Order)
