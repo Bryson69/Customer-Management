@@ -1,5 +1,12 @@
 {% load static %}
 <!--Navbar-->
+<style>
+    .hello-msg{
+        font-size: 18px;
+        color: #fff;
+        margin-right: 20px;
+    }
+</style>
 <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
 
     <!-- Navbar brand -->
@@ -34,12 +41,9 @@
 
         </ul>
         <!-- Links -->
+        <span class="hello-msg">Hello, {{request.user}}</span>
+        <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
 
-        <form class="form-inline">
-            <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            </div>
-        </form>
     </div>
     <!-- Collapsible content -->
 
