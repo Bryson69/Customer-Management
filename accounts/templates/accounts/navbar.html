@@ -22,6 +22,7 @@
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
+            {% if request.user.is_staff %}
             <li class="nav-item">
                 <a class="nav-link" href=" {% url 'home' %} ">Dashboard           
           </a>
@@ -29,6 +30,7 @@
             <li class="nav-item">
                 <a class="nav-link" href=" {% url 'products' %} ">Products</a>
             </li>
+            {% endif %}
             <!-- Dropdown -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
