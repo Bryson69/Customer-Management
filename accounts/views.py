@@ -8,7 +8,7 @@ from .filters import OrderFilter
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from .decorators import unauthenticated_user ,allowed_users
+from .decorators import unauthenticated_user ,allowed_users, admin_only
 from django.contrib.auth.models import Group
 # Create your views here.
 @unauthenticated_user
@@ -24,7 +24,8 @@ def registerPage(request):
                 user = form.save()
                 username = form.cleaned_data.get('username')
 
-                
+                group = Group.objects.get(name='customer')
+                user.groups.add(group)
 
 
                 messages.success(request, 'Account was successfully created for ' + username)
@@ -56,7 +57,7 @@ def logoutUser(request):
 
 
 @login_required(login_url='login')
-
+@admin_only
 def home(request):
     orders = Order.objects.all()
     customers = Customer.objects.all()
