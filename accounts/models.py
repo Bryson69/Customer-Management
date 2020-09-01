@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 # Allow to create classes that create database tables.
 #
 # Create your models here.
@@ -9,6 +10,7 @@ from django.db import models
 # Allows to import customer with maybe just a name and no phone or email or date created. 
 # If null is not set to true There will be an error and we will be forced to add a defult value.
 class Customer(models.Model):
+    user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=200, null=True)
     phone = models.CharField(max_length=200, null=True)
     email = models.CharField(max_length=200, null=True)
