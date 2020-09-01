@@ -39,7 +39,9 @@ def admin_only(view_func):
 
         if group == 'customer':
             return redirect('user-page')
-
-        if group == 'admin':
+        elif group == 'admin':
             return view_func(request, *args, **kwargs)
+        else:
+            return redirect('user-page')# <- return response here (possibly a redirect to login page?)
+
     return wrapper_function
