@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 # When a user types in a url path its the job to find the
 # pattern that the user has typed into the browser and
@@ -24,3 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('accounts.urls'))#Specified app name and which url were calling
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
