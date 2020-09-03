@@ -13,16 +13,16 @@ from django.contrib.auth.models import Group
 # Create your views here.
 @unauthenticated_user
 def registerPage(request):
-    form = CreateUserForm()
-    if request.method == 'POST':
-        form = CreateUserForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            username = form.cleaned_data.get('username')
-            messages.success(request, 'Account was successfully created for ' + username)
-            return redirect('login')
-    context = {'form':form}
-    return render(request , 'accounts/register.html', context)
+        form = CreateUserForm()
+        if request.method == 'POST':
+            form = CreateUserForm(request.POST)
+            if form.is_valid():
+                user = form.save()
+                username = form.cleaned_data.get('username')
+                messages.success(request, 'Account was successfully created for ' + username)
+                return redirect('login')
+        context = {'form':form}
+        return render(request , 'accounts/register.html', context)
 
 @unauthenticated_user
 def loginPage(request):
