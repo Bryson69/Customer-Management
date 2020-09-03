@@ -1,10 +1,8 @@
 # Customer Management
 
-![developer]()
-
 ## By BrysonMundia (https://github.com/Bryson69)😎 
 
-#### Live Site [Customer Management](https://awwwarda123.herokuapp.com/) 
+### Live Site [Customer Management]() 
 
 ## Description
 
