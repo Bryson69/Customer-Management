@@ -20,7 +20,7 @@ A web application whereby
 ### Here is a sneak peek ...
 
 ![](images/img2.png)
-![](images/img3.png)
+<!-- ![](images/img3.png) -->
 ![](images/img1.png)
 
 
