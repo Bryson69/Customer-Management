@@ -19,8 +19,9 @@ A web application whereby
 
 ### Here is a sneak peek ...
 
-![](screenshotss/img13.png)
-![](screenshotss/img3.png)
+![](images/img2.png)
+![](images/img3.png)
+![](images/img1.png)
 
 
 ## Getting Started
@@ -28,7 +29,7 @@ A web application whereby
 To get a copy of the project up and running on your local machine for development and testing purposes, 
 1. **clone** this repository 
    ``` 
-   git clone https://github.com/KarenNgala/Watchdogs
+   git clone https://github.com/Bryson69/Customer-Management
    ```
 2. Set up a Python development environment that includes; Python, **pip** & **a virtual environment** 
    ```bash
