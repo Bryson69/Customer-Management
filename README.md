@@ -1,6 +1,32 @@
-# Customer Management
+<h1 align="center">Customer Management</h1>
 
-## By BrysonMundia (https://github.com/Bryson69)😎 
+<body>
+    <div>Live site In <span id="time">48:00</span> minutes!</div>
+</body>
+## By BrysonMundia (https://github.com/Bryson69)
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
 
 ### Live Site [Customer Management]() 
 
