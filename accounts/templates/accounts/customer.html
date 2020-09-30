@@ -1,9 +1,9 @@
-{% extends 'accounts/main.html'%} {% block content %}
+{% extends 'accounts/main.html'%} {% load static %} {% block content %}
 <br>
 
 <div class="row">
     <div class="col-md">
-        <div class="card card-body animated wow fadeInUp">
+        <div class="card card-body">
             <h5>Customer:</h5>
             <br>
             <a class="btn btn-outline-info  btn-sm btn-block" href="">Update Customer</a>
@@ -14,7 +14,7 @@
     </div>
 
     <div class="col-md">
-        <div class="card card-body animated wow fadeInUp">
+        <div class="card card-body">
             <h5>Contact Information</h5>
             <hr>
             <p>Email: {{ customer.email }} </p>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="col-md">
-        <div class="card card-body animated wow fadeInUp">
+        <div class="card card-body">
             <h5>Total Orders</h5>
             <hr>
             <h1 style="text-align: center;padding: 10px"> {{ order_count }} </h1>
@@ -35,7 +35,7 @@
 
 <br>
 <div class="row">
-    <div class="col animated wow fadeInDown">
+    <div class="col">
         <div class="card card-body">
             <form method="get">
                 {{myfilter.form}}
@@ -49,7 +49,7 @@
 <br>
 
 <div class="row">
-    <div class="col-md animated wow fadeInDown">
+    <div class="col-md">
         <div class="card card-body">
             <table class="table table-sm">
                 <tr>

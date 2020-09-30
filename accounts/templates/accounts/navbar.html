@@ -1,7 +1,7 @@
 {% load static %}
 <!--Navbar-->
 <style>
-    .hello-msg{
+    .hello-msg {
         font-size: 18px;
         color: #fff;
         margin-right: 20px;
@@ -10,7 +10,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
 
     <!-- Navbar brand -->
-    <img src=" {% static 'images/logo.png' %} " href = " {% url 'home' %} " alt="">
+    <img src=" {% static 'images/logo.png' %} " alt="">
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,8 +22,8 @@
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
+            {% if request.user.is_staff %}
             <li class="nav-item">
-                {% if request.user.is_staff %}
                 <a class="nav-link" href=" {% url 'home' %} ">Dashboard           
           </a>
             </li>
@@ -35,11 +35,10 @@
                 <a class="nav-link" href=" {% url 'account' %} ">Account</a>
             </li>
             {% endif %}
-
         </ul>
         <!-- Links -->
         <span class="hello-msg">Hello, {{request.user}}</span>
-        <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+        <span><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
 
     </div>
     <!-- Collapsible content -->

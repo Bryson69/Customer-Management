@@ -1,23 +1,22 @@
-{% extends 'accounts/main.html'%} {% block content %}
+{% extends 'accounts/main.html'%} {% load static %} {% block content %}
 <br>
-
-<div class="row">
+<div class="row animated slideInUp">
     <div class="col-md">
         <div class="card card-body">
-            <h5 class="animated wow fadeInUp">Products</h5>
+            <h5>Products</h5>
         </div>
         <div class="card card-body">
             <table class="table">
                 <tr>
-                    <th class="animated wow fadeInUp">Product</th>
-                    <th class="animated wow fadeInUp">Category</th>
-                    <th class="animated wow fadeInUp">Price</th>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
                 </tr>
                 {% for i in products %}
                 <tr>
-                    <td class="animated wow fadeInUp"> {{i.name}} </td>
-                    <td class="animated wow fadeInUp"> {{i.category}} </td>
-                    <td class="animated wow fadeInUp"> {{i.price}} </td>
+                    <td> {{i.name}} </td>
+                    <td> {{i.category}} </td>
+                    <td> {{i.price}} </td>
                 </tr>
                 {% endfor %}
 

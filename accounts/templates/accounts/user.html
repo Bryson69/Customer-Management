@@ -1,10 +1,11 @@
-{% extends 'accounts/main.html'%} {% block content %}{% include 'accounts/status.html' %}
+{% extends 'accounts/main.html' %} {% load static %} {% block content %} {% include 'accounts/status.html' %}
 
 <div class="row">
     <div class="col-md">
         <div class="card card-body">
             <table class="table table-sm">
                 <tr>
+                    
                     <th>Product</th>
                     <th>Note</th>
                     <th>Date Orderd</th>
@@ -18,13 +19,12 @@
                     <td> {{ order.note }} </td>
                     <td> {{ order.date_created }} </td>
                     <td> {{ order.status }} </td>
-                   </tr>
+                </tr>
                 {% endfor %}
 
             </table>
         </div>
     </div>
 </div>
-
 
 {% endblock content %}
