@@ -9,10 +9,7 @@ A web application whereby
 
 
 # How it works
-* User needs to sign up.
-* Click on a project you want to view
-* If you like the project idea then you can vote for it . 
-
+Fork the application ............
 
 ### Here is a sneak peek ...
 
@@ -89,13 +86,6 @@ pc-name=#  CREATE DATABASE <name>;
 python3.6 manage.py runserver
 ```
 Open [localhost:8000](http://127.0.0.1:8000/)
-
-### Behaviour Driven Development
-| Our Program should handle                       | Input example | Output example                                   |
-|:------------------------------------------------|---------------|--------------------------------------------------|
-|Login and Logout functionalities.|
-|Only the admin will be able to add a customer.| Move the cuser over the images| a description of each image should apper.|
-|Enter your email address and message in the contact form| Enter your details and message|A reply should pop up to alert you that the message has been received
 
 ## User Stories
 
