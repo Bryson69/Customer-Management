@@ -1,20 +1,7 @@
 <h1 align="center">Customer Management</h1>
 
 
-### Live Site [Customer Management]() 
-
-## Description
-
-A web application whereby
-
-
-# How it works
-Fork the application ............
-
-### Here is a sneak peek ...
-
-![](images/img1.png)
-
+### Live Site [Customer Management](crm1-bryson.herokuapp.com/) 
 
 ## Getting Started
 
