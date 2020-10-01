@@ -1,7 +1,7 @@
 <h1 align="center">Customer Management</h1>
 
 
-### Live Site [Customer Management](crm1-bryson.herokuapp.com/) 
+### Live Site [crm1-bryson.herokuapp.com/](Customer Management) 
 
 ## Getting Started
 
