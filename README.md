@@ -74,17 +74,6 @@ python3.6 manage.py runserver
 ```
 Open [localhost:8000](http://127.0.0.1:8000/)
 
-## User Stories
-
-* View posted orders
-* Search for projects 
-* View projects overall score
-* View my profile page
-
-
-# CREDITS
-##### Google.com ⭐️ StackOverflow.com ⭐️
-
 # Support and Contacts
 In case You have any issues using this code please do no hesitate to get in touch with me through brysonmundia@gmail.com or leave a comment here on Github.
 
