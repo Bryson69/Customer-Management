@@ -1,8 +1,7 @@
-
+<h1 align="center">Customer Management</h1>
 <p align="center">
-   <h1 align="center">Customer Management</h1><br>
     <br>
-     <img align="center" src="https://forthebadge.com/images/badges/made-with-python.svg" >
+     <img src="https://forthebadge.com/images/badges/made-with-python.svg" >
     <br>
 </p>
 
