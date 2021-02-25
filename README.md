@@ -1,4 +1,10 @@
-<h1 align="center">Customer Management</h1>
+
+<p align="center">
+   Customer Management<br>
+    <br>
+     <img src="https://forthebadge.com/images/badges/made-with-python.svg" >
+    <br>
+</p>
 
 
 ### Live Site [Customer Management](https://crm1-bryson.herokuapp.com/) 
