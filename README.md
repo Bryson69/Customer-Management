@@ -2,7 +2,7 @@
 <p align="center">
    <h1 align="center">Customer Management</h1><br>
     <br>
-     <img src="https://forthebadge.com/images/badges/made-with-python.svg" >
+     <img align="center" src="https://forthebadge.com/images/badges/made-with-python.svg" >
     <br>
 </p>
 
