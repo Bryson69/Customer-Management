@@ -1,6 +1,6 @@
 
 <p align="center">
-   Customer Management<br>
+   <h1>Customer Management</h1><br>
     <br>
      <img src="https://forthebadge.com/images/badges/made-with-python.svg" >
     <br>
